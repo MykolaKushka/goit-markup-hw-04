@@ -4,6 +4,16 @@ body{
   background-color: white;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 a{
   text-decoration: none;
 }
@@ -83,6 +93,7 @@ img{
 /******************************** Header section *********************************/
 .header-inner{
   display: flex;
+  align-items: center;
 }
 
 .header-address{
@@ -107,7 +118,7 @@ img{
 .nav{
   display: flex; 
   align-items: center;
-  gap: 40px;
+  margin-right: auto;
 }
 
 .logo{
@@ -121,6 +132,7 @@ img{
 
 .header-link{
   padding: 24px 0;
+  display:block;
 }
 
 .address{
@@ -128,21 +140,27 @@ img{
   gap: 40px;
 }
 
-
 /**************************** End of the Header section ***************************/
 
 
 /********************************** Hero section (1) **********************************/
 .hero-section{
   background-color: #2e2f42;
+  padding: 188px 0;
+  background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-section__title{
+  max-width: 496px; 
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-section__btn{
@@ -152,30 +170,20 @@ img{
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none; 
+  border-radius: 4px;
   cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-section__btn:hover, .hero-section__btn:focus{
   background-color: #404BBF;
 }
 
-.hero-section{
-  padding: 188px 0;
-}
-
-.hero-section__title{
-  max-width: 496px; 
-}
-
-.hero-section__btn{
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  border: none; 
-  background-color: #4d5ae5; 
-  border-radius: 4px;
-  cursor: pointer;
-}
 
 /******************************* End of the Hero section (1) *******************************/
 
