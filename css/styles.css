@@ -1,0 +1,302 @@
+body{
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img{
+  display: block;
+}
+
+.header{
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.text-main{
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em
+}
+
+.title_md{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.title_lg{
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+
+.logo{
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.logo__black-part{
+  color: #2e2f42;
+}
+
+.container{
+  width: 1158px; 
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+
+
+/******************************** Header section *********************************/
+.header-inner{
+  display: flex;
+}
+
+.header-address{
+  font-style: normal;
+}
+
+.header-address__item, .header-link{
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.header-link{
+  color: #2e2f42;
+  font-weight: 500;
+}
+
+.header-link:hover, .header-link:focus, .header-address__item:hover, .header-address__item:focus{
+  color: #404bbf;
+}
+
+.nav{
+  display: flex; 
+  align-items: center;
+  gap: 40px;
+}
+
+.logo{
+  margin-right: 76px;
+}
+
+.menu{
+  display: flex;
+  gap: 40px;
+}
+
+.header-link{
+  padding: 24px 0;
+}
+
+.address{
+  display: flex;
+  gap: 40px;
+}
+
+
+/**************************** End of the Header section ***************************/
+
+
+/********************************** Hero section (1) **********************************/
+.hero-section{
+  background-color: #2e2f42;
+}
+
+.hero-section__title{
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.hero-section__btn{
+  background-color: #4D5AE5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.hero-section__btn:hover, .hero-section__btn:focus{
+  background-color: #404BBF;
+}
+
+.hero-section{
+  padding: 188px 0;
+}
+
+.hero-section__title{
+  max-width: 496px; 
+}
+
+.hero-section__btn{
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none; 
+  background-color: #4d5ae5; 
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/******************************* End of the Hero section (1) *******************************/
+
+
+/********************************** Advantages section (2) *********************************/
+
+.advantages{
+  padding: 120px 0;
+}
+
+.advantages-list{
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-list-item{
+  width: calc((100% - 24px * (4 - 1)) / 4);
+}
+
+.advantages .title_md{
+  margin-bottom: 8px;
+}
+
+/**************************** End of the Advantages section (2) ****************************/
+
+/*********************************** Our Team section (3) **********************************/
+.team{
+  background-color: #F4F4FD;
+  padding: 120px 0
+}
+
+.team .title_lg{
+  margin-bottom: 72px; 
+}
+
+.team-list{
+  display: flex;
+  gap: 24px;
+}
+
+.card-person{
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px; 
+  background-color: #FFFFFF;
+}
+
+.person-info{
+  padding: 32px 0;
+}
+
+.card-person .title_md{
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.card-person .text-main{
+  text-align: center;
+}
+
+/**************************** End of the Our Team section (3) ****************************/
+
+
+/*********************************** Our Portfolio section (4) *****************************/
+
+.portfolio{
+  padding-top: 120px; 
+  padding-bottom: 120px;
+}
+
+.portfolio .title_lg{
+  margin-bottom: 72px; 
+}
+
+.portfolio-list{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px; 
+  row-gap: 48px; 
+}
+
+.portfolio-list-item{
+  width: calc((100% - 48px) / 3)
+}
+
+.portfolio-info{
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-info .title_md{
+  margin-bottom: 8px;
+}
+
+
+/**************************** End of the Portfolio section (4) *****************************/
+
+
+/*************************************** Footer ***************************************/
+
+.footer{
+  background-color:#2e2f42;
+  padding: 100px 0;
+}
+
+.footer .logo__black-part{
+  color: #f4f4fd;
+}
+
+.footer .text-main{
+  color: #F4F4FD; 
+}
+
+.footer .logo{
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer .text-main{
+  max-width: 264px;
+}
+
+/********************************** End of the Footer *********************************/
+
