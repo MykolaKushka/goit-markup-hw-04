@@ -134,6 +134,7 @@ img{
 .header-link{
   padding: 24px 0;
   display:block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .header-link--selected{
@@ -151,10 +152,6 @@ img{
   background-color: #404bbf;
   border-radius: 2px; 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link{
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .address{
@@ -298,7 +295,8 @@ img{
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .team-contacts-link:hover{
@@ -337,6 +335,37 @@ img{
   width: calc((100% - 48px) / 3)
 }
 
+.portfolio-list-item:hover{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.portfolio-list-item:hover .portfolio .text-main{
+  transform: translateY(0%);
+}
+
+.portfolio-image-wrap{
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-image{
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-image-text{
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5; 
+  height: 100%; 
+  width: 100%; 
+  transform: translateY(100%); 
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portfolio-info{
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -373,6 +402,46 @@ img{
 
 .footer .text-main{
   max-width: 264px;
+}
+
+.container--footer{
+  display: flex; 
+  align-items: baseline;
+}
+
+.footer-wrap{
+  margin-right: 120px;
+}
+
+.footer-social-media{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin-bottom: 16px; 
+}
+
+.footer-social-media{
+  display: flex; 
+  gap: 16px;
+}
+
+.footer-social-media-item{
+  width: 40px;
+  height: 40px; 
+}
+
+.footer-social-media-link{
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius:50%;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background-color: #31d0aa;
+  background-color: #31d0aa;
 }
 
 /********************************** End of the Footer *********************************/
